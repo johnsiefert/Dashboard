@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  .container {
+    text-align: center;
+    display: grid;
+    gap: 4px;
+    min-height: 100vh;
+  }
+
+  .container div {
+    padding: 15px;
+    font-size: 32px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: white;
+  }
+
+  .header {
+    background-color: #393f4d;
+    grid-area: 1 / 2 / 2 / 2;
+    display: grid;
+    grid-template: auto 1fr / 2fr 1fr,1fr;
+    padding: 0.5rem 2rem;
+  }
+  .logo,.menu,.search-container {
+    display: flex;
+
+  }
+  .menu,.logo{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .menu ul,
+  .menu li {
+    display:flex;
+    font-size: 16px;
+    list-style-type: none;
+    gap: 20px;
+  }
+
+  .sidebar {
+    background-color: #FF7755;
+    grid-row: 1 / 4;
+    display: grid;
+  }
+
+
+
+  .sidebar .side-content {
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .nav {
+    background-color: #FF7755;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr,1fr,1fr));
+  }
+
+  .heading {
+    text-align: left;
+  }
+
+
+  .nav ul li {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .article {
+    background-color: #bccbde;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+
+
+  .article p {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    text-align: left;
+  }
+
+  .article .card {
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+    height: 200px;
+  }
+
+  .card p {
+    color: black;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .card .title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+
+  .nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+
